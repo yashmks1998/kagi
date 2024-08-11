@@ -26,6 +26,8 @@
   width: 129px;
   height: 129px;
   z-index: 2;
+  animation: float 6s ease-in-out infinite;
+  /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
 }
 .ellipse-div {
   position: absolute;
@@ -33,11 +35,13 @@
   left: 0;
   border-radius: 50%;
   background-color: var(--kagi-white);
-  border: 0 solid var(--kagi-green);
+  border: 2px solid var(--kagi-green);
   box-sizing: border-box;
   width: 100%;
   height: 100%;
   box-shadow: 0 0 0 2px #19363A;
+  animation: float 6s ease-in-out infinite;
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 }
 .image-17-icon {
   position: absolute;
@@ -47,17 +51,20 @@
   height: 84px;
   object-fit: cover;
   z-index: 1;
+  animation: float 6s ease-in-out infinite;
 }
 .ellipse-container,
 .ellipse-group,
 .ellipse-parent,
-.ellipse-parent1 {
+.ellipse-parent1,
+.ellipse-parent2 {
   position: absolute;
   top: 92px;
   left: 214px;
   width: 129px;
   height: 129px;
   z-index: 2;
+  
 }
 .ellipse-container,
 .ellipse-group,
@@ -73,6 +80,10 @@
   top: 193px;
   left: 1070px;
 }
+.ellipse-parent2{
+  top: 193px;
+  left: 0;
+}
 .frame-child11,
 .kagi-finance-icon {
   position: absolute;
@@ -81,6 +92,7 @@
   width: 149px;
   height: 113px;
   z-index: 2;
+  
 }
 .kagi-finance-icon {
   top: 439px;
@@ -104,6 +116,8 @@
   height: 84px;
   object-fit: cover;
   z-index: 6;
+  animation: float 6s ease-in-out infinite;
+
 }
 .frame-child12,
 .image-20-icon1 {
@@ -189,4 +203,22 @@
   .integrations2 {
     gap: var(--gap-4xl);
   }
+}
+
+
+
+
+@keyframes float {
+	0% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(0px);
+	}
+	50% {
+		/* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
+		transform: translatey(-20px);
+	}
+	100% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(0px);
+	}
 }

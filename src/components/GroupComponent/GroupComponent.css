@@ -37,7 +37,7 @@
   border-color: var(--kagi-orange); 
   color: var(--kagi-white); 
   cursor: pointer;
-  filter: brightness(100%) contrast(100%); 
+  /* filter: brightness(100%) contrast(100%);  */
 }
 
 .rectangle-container:hover .group-icon {

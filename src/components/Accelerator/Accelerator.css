@@ -63,8 +63,27 @@
   border: 2px solid var(--kagi-orange);
   border-radius: 12px;
   box-sizing: border-box;
-  z-index: 2; /* Ensure these elements overlay the image */
+  z-index: 2; 
+  transition: all 0.3s ease;
 }
+
+.rectangle-parent1:hover ,
+.rectangle-parent2:hover{
+  background-color: var(--kagi-orange); 
+  border-color: var(--kagi-orange); 
+  color: var(--kagi-white); 
+  cursor: pointer;
+  transform: scale(1.05); 
+
+  /* animation: float 2s ease-in-out infinite; */
+  /* filter: brightness(100%) contrast(100%);  */
+}
+
+.rectangle-parent1:hover .for-projects, .rectangle-parent1:hover .description,
+.rectangle-parent2:hover .for-investors, .rectangle-parent2:hover .description {
+  color: var(--kagi-white); 
+}
+
 
 .rectangle {
   position: relative;
