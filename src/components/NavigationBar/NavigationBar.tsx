@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import logo from "/assets/Logo Kagi.png"
 import "./NavBar.css";
 
 export type NavigationBarType = {
@@ -13,7 +14,7 @@ const NavigationBar: FunctionComponent<NavigationBarType> = ({ className = "" })
           className="logo-kagi-icon"
           loading="lazy"
           alt="Kagi Logo"
-          src="/../../src/assets/Logo Kagi.png"
+          src={logo}
         />
       </div>
       <div className="navigation-bar">

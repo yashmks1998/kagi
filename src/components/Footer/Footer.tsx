@@ -1,4 +1,6 @@
 import { FunctionComponent } from "react";
+import logo from "../../../public/assets/Logo Kagi.png"
+import lock from "/assets/icons/group-2.svg"
 import "./Footer.css";
 
 export type FrameComponent2Type = {
@@ -19,22 +21,26 @@ const FrameComponent2: FunctionComponent<FrameComponent2Type> = ({
               staking pools for their tokens.
             </div>
           </div>
-          <img className="group-icon1" alt="" src="../../src/assets/icons/group-2.svg" />
+          <img
+            className="group-icon1"
+            alt="Lock"
+            src={lock}
+          />
         </div>
         <div className="logo-content-wrapper">
           <div className="logo-content">
             <img
               className="kagi-logo-icon"
               loading="lazy"
-              alt=""
-              src="../../src/assets/Logo Kagi.png"
+              alt="logo"
+              src={logo}
             />
             <div className="logo-content-inner">
-            <img
+              <img
                 className="frame-child14"
                 loading="lazy"
                 alt=""
-                src="../../src/assets/icons/group-35275.svg"
+                src="assets/icons/group-35275.svg"
               />
             </div>
           </div>
