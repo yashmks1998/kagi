@@ -22,7 +22,7 @@ const FrameComponent2: FunctionComponent<FrameComponent2Type> = ({
             </div>
           </div>
           <img
-            className="group-icon1"
+            className="lock"
             alt="Lock"
             src={lock}
           />
